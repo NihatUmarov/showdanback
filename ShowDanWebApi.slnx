@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Элементы решения/">
+    <File Path="update_db.bat" />
+  </Folder>
+  <Project Path="ShowDanWebApi.API/ShowDanWebApi.API.csproj" />
+  <Project Path="ShowDanWebApi.Core/ShowDanWebApi.Core.csproj" />
+  <Project Path="ShowDanWebApi.Data/ShowDanWebApi.Data.csproj" />
+</Solution>
