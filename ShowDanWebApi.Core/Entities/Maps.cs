@@ -19,21 +19,6 @@ namespace ShowDanWebApi.Core.Entities
 
         public int CountryId { get; set; } [ForeignKey("CountryId")]
         public virtual Countries Country { get; set; } = null!;
-        public Point Location { get; set; } = null!;
-        public double RadiusMeters { get; set; }
-    }
-
-
-    public class OsmAddress
-    {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)] // ID из OSM
-        public long Id { get; set; }
-
-        [Column(TypeName = "jsonb")] public MultiLang Country { get; set; } = new MultiLang("Узбекистан", "Uzbekistan", "O'zbekiston");
-        [Column(TypeName = "jsonb")] public MultiLang? City { get; set; }
-        [Column(TypeName = "jsonb")] public MultiLang? Street { get; set; }
-
         public string? HouseNumber { get; set; }
         [Required] public string FullSearchAddress { get; set; } = string.Empty; // Сюда склеим все языки для GIN индекса
         [Required] public Point Location { get; set; } = null!;

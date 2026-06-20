@@ -8,8 +8,5 @@ namespace ShowDanWebApi.Core.Entities.News
     public class NewsLike
     {
         [Key]
-        public int NewsLikeId {  get; set; }
-        public int NewsId { get; set; }
-        public int UserId { get; set; }
     }
 }

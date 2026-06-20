@@ -10,14 +10,5 @@ public static class LevelHelper
         if (points >= Thresholds[^1]) return (20, 100);
         if (points <= 0) return (1, 1);
 
-        int index = Array.BinarySearch(Thresholds, points);
-        int level = index >= 0 ? index + 1 : ~index;
-
-        int currentLevelPoints = Thresholds[level - 1];
-        int nextLevelPoints = Thresholds[level];
-
-        int percentage = (int)Math.Round((double)(points - currentLevelPoints) / (nextLevelPoints - currentLevelPoints) * 100);
-
-        return (level, Math.Clamp(percentage, 1, 99));
     }
 }
