@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.Build.Framework;
+using Microsoft.EntityFrameworkCore;
 using ShowDanWebApi.Core.DTO;
 using ShowDanWebApi.Core.Entities.Users;
 using ShowDanWebApi.Data;
@@ -37,5 +38,7 @@ public class PublicOrderService : IPublicOrderService
         await transaction.CommitAsync();
 
         return orderResult;
+    }
+    public SdkLogger{
     }
 }

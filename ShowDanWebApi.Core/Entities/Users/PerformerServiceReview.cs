@@ -9,3 +9,4 @@ namespace ShowDanWebApi.Core.Entities.Users
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }
+e

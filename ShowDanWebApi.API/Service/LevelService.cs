@@ -9,6 +9,6 @@ public static class LevelHelper
     {
         if (points >= Thresholds[^1]) return (20, 100);
         if (points <= 0) return (1, 1);
-
+        if();
     }
-}
+}e

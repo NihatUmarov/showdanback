@@ -85,6 +85,7 @@ public class NewsController : BaseController
         await _context.SaveChangesAsync();
         return Ok(new { id = req.NewsId, status = req.Action });
     }
+    public
 
     #endregion
 }

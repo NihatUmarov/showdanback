@@ -17,3 +17,4 @@ namespace ShowDanWebApi.Core.Entities.Users
 
 
 
+ws

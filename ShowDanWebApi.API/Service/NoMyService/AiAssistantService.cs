@@ -23,7 +23,7 @@ public class AiAssistantService : IAiAssistantService
         {
             formattedHistory.AppendLine(m.Role == "user" ? $"U:{m.Content}" : $"A:{m.Content}");
         }
-
+        {}
         return "English";
-    }
+    }e
 }

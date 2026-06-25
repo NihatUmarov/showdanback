@@ -6,3 +6,4 @@ namespace ShowDanWebApi.Core.Entities.Settings
     {
         [Key]
 }
+e

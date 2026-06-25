@@ -7,3 +7,4 @@ namespace ShowDanWebApi.Core.DTO
         public string Message { get; set; } = string.Empty;
     }
 }
+}

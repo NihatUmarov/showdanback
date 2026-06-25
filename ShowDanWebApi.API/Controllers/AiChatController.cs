@@ -21,7 +21,7 @@ public class AiChatController : BaseController
 
         aiState.History.Add(new ChatHistoryMessage { Role = "assistant", Content = aiReply });
         if (aiState.History.Count > 6)
-        {
+        {ау
             aiState.History = aiState.History.Skip(aiState.History.Count - 6).ToList();
         }
 
@@ -36,7 +36,6 @@ public class AiChatController : BaseController
 
         if (isCatReady)
             query = query.Where(s => s.CategoryId == aiState.Slots.CategoryId!.Value);
-
         if (isCityReady)
             query = query.Where(s => s.Performer.CityId == aiState.Slots.CityId!.Value);
 
@@ -48,4 +47,5 @@ public class AiChatController : BaseController
             char gCode = (char)aiState.Slots.Gender;
             query = query.Where(s => s.Performer.User.GenderCode == gCode);
         }
+}
 }

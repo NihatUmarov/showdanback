@@ -7,4 +7,4 @@ namespace ShowDanWebApi.Core.Language
         private static IHttpContextAccessor? _httpContextAccessor;
 
     }
-}
+}e

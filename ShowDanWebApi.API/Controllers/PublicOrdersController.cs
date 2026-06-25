@@ -27,9 +27,11 @@ public class PublicOrdersController : BaseController
                 Status = o.Status.ToString(),
                 CreatedAt = o.CreatedAt
             })
-            .ToListAsync();
+            .ToListAsync()
+};
 
         return Ok(feed);
+        
     }
     [HttpPost("apply")]
     public async Task<IActionResult> ApplyToOrder([FromBody] ApplyToPublicOrderDto dto)

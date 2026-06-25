@@ -9,4 +9,4 @@ namespace ShowDanWebApi.Core.Entities.News;
 public class News
 {
     public DateTime TS { get; set; } = DateTime.UtcNow; // Дата создания записи
-}
+}d

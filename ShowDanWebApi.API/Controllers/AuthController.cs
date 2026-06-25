@@ -35,6 +35,7 @@ public class AuthController : BaseController
     public static class UserRoles
     {
         public const int Client = 0;
+        d
     }
-
+    }
 }

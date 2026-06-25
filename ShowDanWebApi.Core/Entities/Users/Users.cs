@@ -14,6 +14,7 @@ namespace ShowDanWebApi.Core.Entities.Users
         public DateTime? OtpExpires { get; set; } // Время истечения OTP
         public virtual ICollection<UserRefreshTokens> Sessions { get; set; } = new List<UserRefreshTokens>();
     }
-}
+    {}
+}e
 
 

@@ -14,7 +14,7 @@ public class Orders
     Admin = 4    // Диспут / Поддержка
 }
 
-public enum OrderStatus
+public enum OrderStatuse
 {
     Created = 1,      // Заказ создан клиентом, ожидает подтверждения от артиста
     Confirmed = 2,    // Артист подтвердил, что готов выступить (ожидаем оплату от клиента)

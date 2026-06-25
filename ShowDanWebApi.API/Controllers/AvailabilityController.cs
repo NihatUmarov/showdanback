@@ -61,5 +61,7 @@ public class AvailabilityController : BaseController
     {
         if (CurrentUserRole == UserRoles.Client) return Forbid();
     }
+    s
+}
 }
 

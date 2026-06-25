@@ -13,8 +13,8 @@ public class PublicOrders
     [ForeignKey(nameof(ServiceId))] public virtual PerformerServices Service { get; set; } = null!;
     [Column(TypeName = "decimal(18,2)")] public decimal BidPrice { get; set; }
     [Column(TypeName = "decimal(18,2)")] public decimal TravelPrice { get; set; }
-
-    [StringLength(500)] public string? CoverLetter { get; set; }
+ws
+    [StringLength(500)] public string? CoverLetter { geet; set; }
 
     public ApplicationStatus Status { get; set; } = ApplicationStatus.Pending;
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;

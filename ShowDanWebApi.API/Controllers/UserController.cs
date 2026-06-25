@@ -77,4 +77,5 @@ public class UserController : BaseController
             Rating = s.Rating,
             Level = levelInfo.Level,
             PointsPercentage = levelInfo.Percentage,
-}
+        }
+}}

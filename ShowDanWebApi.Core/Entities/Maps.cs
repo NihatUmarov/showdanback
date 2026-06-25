@@ -23,4 +23,4 @@ namespace ShowDanWebApi.Core.Entities
         [Required] public string FullSearchAddress { get; set; } = string.Empty; // Сюда склеим все языки для GIN индекса
         [Required] public Point Location { get; set; } = null!;
     }
-}
+}e

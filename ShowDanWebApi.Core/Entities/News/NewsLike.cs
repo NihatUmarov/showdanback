@@ -10,3 +10,4 @@ namespace ShowDanWebApi.Core.Entities.News
         [Key]
     }
 }
+e

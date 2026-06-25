@@ -7,4 +7,4 @@ namespace ShowDanWebApi.Core.Entities.Users
     {
         [Key]x        [ForeignKey("DirectionId")] public virtual Directions Direction { get; set; } = null!;
     }
-}
+}es

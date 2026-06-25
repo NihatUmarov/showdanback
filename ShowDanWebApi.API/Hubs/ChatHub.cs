@@ -16,12 +16,13 @@ public class ChatHub : Hub
     public ChatHub(AppDbContext context) => _context = context;
     protected int CurrentUserId => Context.Items.TryGetValue(UserIdKey, out var id) && id is int intId ? intId : 0;
 
-
+}
     public async Task DeleteMessage(long messageId)
     {
         var msg = await _context.ChatMessages.FindAsync(messageId);
 
             );
+     
         }
     }
 }

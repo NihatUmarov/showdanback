@@ -38,12 +38,13 @@ x
             filesToDelete.AddRange(service.AudiosPersonal!.Where(a => payload.DeleteAudioUrls.Contains(a.Url)).Select(a => a.Url));
             service.AudiosPersonal!.RemoveAll(a => payload.DeleteAudioUrls.Contains(a.Url));
         }
+        }
 
         if (payload.DeleteVideoUrls?.Count > 0)
         {
             service.VideoPersonal!.RemoveAll(v => payload.DeleteVideoUrls.Contains(v.Url));
         }
-
+d
         if (hasNewAvatar && !string.IsNullOrEmpty(user.PhotoUrl))
         {
             filesToDelete.Add(user.PhotoUrl);

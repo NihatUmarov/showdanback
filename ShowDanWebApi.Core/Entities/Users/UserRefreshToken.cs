@@ -8,4 +8,4 @@ namespace ShowDanWebApi.Core.Entities.Users
         [Key]        public string? IpAddress { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
-}
+}e

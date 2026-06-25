@@ -19,4 +19,5 @@ public class EmailService : IEmailService
         using var message = new MailMessage(smtpSection["From"]!, toEmail, "Код входа ShowDan", body) { IsBodyHtml = true };
         await smtp.SendMailAsync(message);
     }
-}
+    {}
+}e

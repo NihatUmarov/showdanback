@@ -36,8 +36,7 @@ public class ChatHistoryRequest
     [JsonPropertyName("dwdid")] public int? InterlocutorId { get; set; }
     [JsonPropertyName("odwdwrd")] public int? OrderId { get; set; }
 }
-
-public class ChatListResponse
+{}public class ChatListResponse
 {
-   
+ public  
 }

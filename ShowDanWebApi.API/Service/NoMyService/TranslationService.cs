@@ -12,6 +12,7 @@ namespace ShowDanWebApi.API.Service
     public class OnlineTranslationService : ITranslationService
     {
            
+    }
         }
 
         private async Task<string> RequestGoogleTranslationAsync(string text, string from, string to)

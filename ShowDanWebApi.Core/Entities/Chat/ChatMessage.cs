@@ -11,3 +11,4 @@ namespace ShowDanWebApi.Core.Entities.Chat
         public long ChatMessageId { get; set; }        public virtual Orders? Order { get; set; }
     }
 }
+}
