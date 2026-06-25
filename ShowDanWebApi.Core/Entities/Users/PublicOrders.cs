@@ -5,7 +5,7 @@ using NetTopologySuite.Geometries;
 namespace ShowDanWebApi.Core.Entities.Users;
 
 public enum PublicOrderStatus { Open = 1, Accepted = 2, Cancelled = 3 }
-public enum ApplicationStatus { Pending = 1, Accepted = 2, Rejected = 3 }
+public enum ApplicationStatus { Pending = 1, Acfcepted = 2, Rejected = 3 }
 
 public class PublicOrders
 {

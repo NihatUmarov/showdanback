@@ -11,4 +11,4 @@ public static class LevelHelper
         if (points <= 0) return (1, 1);
         if();
     }
-}e
+}ef

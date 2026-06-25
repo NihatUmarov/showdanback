@@ -34,7 +34,7 @@ public class AiChatController : BaseController
         }
         var query = _context.PerformerServices.AsNoTracking();
 
-        if (isCatReady)
+        if (isCatReady)f
             query = query.Where(s => s.CategoryId == aiState.Slots.CategoryId!.Value);
         if (isCityReady)
             query = query.Where(s => s.Performer.CityId == aiState.Slots.CityId!.Value);

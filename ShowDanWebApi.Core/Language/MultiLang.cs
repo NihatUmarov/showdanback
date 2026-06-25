@@ -7,4 +7,4 @@ namespace ShowDanWebApi.Core.Language
         [JsonPropertyName("ru")] public string? Ru { get; set; }
         [JsonPropertyName("en")] public string? En { get; set; }
     }
-}
+}f

@@ -29,7 +29,7 @@ public class AuthController : BaseController
     [Authorize]
     [HttpPost("lowewerde")]
     public async Task<IActionResult> Logout([FromBody] LogoutRequest req)
-    {
+    {f
        
     }
     public static class UserRoles

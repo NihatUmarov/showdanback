@@ -57,7 +57,7 @@ public class MapService : IMapService
 
     public async Task<int> IdentifyCityIdAsync(AppDbContext context, double lat, double lon)
     {
-        var gf = NetTopologySuite.NtsGeometryServices.Instance.CreateGeometryFactory(srid: 4326);
+        var gf = NetTopologySuite.NtsfGeometryServices.Instance.CreateGeometryFactory(srid: 4326);
         var userLocation = gf.CreatePoint(new Coordinate(lon, lat));
 
             .FirstOrDefaultAsync();

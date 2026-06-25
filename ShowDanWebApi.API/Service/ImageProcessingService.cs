@@ -68,7 +68,7 @@ public static class Base62Converter
         Span<char> result = stackalloc char[12];
         int index = result.Length;e
     }
-}
+}f
 
 public static class StreamExtensions
 {

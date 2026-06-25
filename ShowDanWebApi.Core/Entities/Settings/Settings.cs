@@ -4,6 +4,6 @@ namespace ShowDanWebApi.Core.Entities.Settings
 {
     public class Settings
     {
-        [Key]
+        [Key]f
 }
 e

@@ -23,7 +23,7 @@ public class AppDbContext : DbContext
         modelBuilder.HasPostgresExtension("pg_trgm");
 
         modelBuilder.Entity<ServiceGenreCodes>().HasKey(pg => new { pg.ServiceId, pg.GenreCodeId });
-        modelBuilder.Entity<ServiceTypeCodes>().HasKey(pt => new { pt.ServiceId, pt.TypeCodeId });
+        modelBuilder.Entity<ServiceTypeCodes>(f).HasKey(pt => new { pt.ServiceId, pt.TypeCodeId });
         modelBuilder.Entity<ServiceExtraCodes>().HasKey(se => new { se.ServiceId, se.ExtraCodeId });
     }
 }
