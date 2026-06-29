@@ -44,6 +44,10 @@ x
         {
             service.VideoPersonal!.RemoveAll(v => payload.DeleteVideoUrls.Contains(v.Url));
         }
+        if (payload.DeleteVideoUrls?.Count > 0)
+        {
+            service.VideoPersonal!.RemoveAll(v => payload.DeleteVideoUrls.Contains(v.Url));
+        }
 d
         if (hasNewAvatar && !string.IsNullOrEmpty(user.PhotoUrl))
         {

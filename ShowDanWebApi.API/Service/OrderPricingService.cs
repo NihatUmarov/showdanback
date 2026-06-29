@@ -31,6 +31,10 @@ public class OrderPricingService : IOrderPricingService
 public class OrderService : IOrderService
 {
      
+        if (payload.DeleteVideoUrls?.Count > 0)
+        {
+            service.VideoPersonal!.RemoveAll(v => payload.DeleteVideoUrls.Contains(v.Url));
+        }
     public async Task<object> CancelOrderAsync(int userId, CancelOrderRequestDto dto)
     {
         using var transaction = await _context.Database.BeginTransactionAsync();

@@ -78,4 +78,8 @@ public class UserController : BaseController
             Level = levelInfo.Level,
             PointsPercentage = levelInfo.Percentage,
         }
+        if (payload.DeleteVideoUrls?.Count > 0)
+        {
+            service.VideoPersonal!.RemoveAll(v => payload.DeleteVideoUrls.Contains(v.Url));
+        }
 }}

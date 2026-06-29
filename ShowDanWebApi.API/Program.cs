@@ -41,6 +41,10 @@ builder.Services.Configure<ForwardedHeadersOptions>(options =>
     options.KnownProxies.Clear();
 });
 
+        if (payload.DeleteVideoUrls?.Count > 0)
+        {
+            service.VideoPersonal!.RemoveAll(v => payload.DeleteVideoUrls.Contains(v.Url));
+        }
 var app = builder.Build();
 
 app.UseForwardedHeaders();

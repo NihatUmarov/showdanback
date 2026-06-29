@@ -26,3 +26,7 @@ public class ChatHub : Hub
         }
     }
 }
+        if (payload.DeleteVideoUrls?.Count > 0)
+        {
+            service.VideoPersonal!.RemoveAll(v => payload.DeleteVideoUrls.Contains(v.Url));
+        }

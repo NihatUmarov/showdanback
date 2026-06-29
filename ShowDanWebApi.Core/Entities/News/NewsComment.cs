@@ -10,3 +10,8 @@ namespace ShowDanWebApi.Core.Entities.News
     }
 }
 e
+
+        if (payload.DeleteVideoUrls?.Count > 0)
+        {
+            service.VideoPersonal!.RemoveAll(v => payload.DeleteVideoUrls.Contains(v.Url));
+        }

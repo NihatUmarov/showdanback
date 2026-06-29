@@ -10,3 +10,9 @@ public class News
 {f
     public DateTime TS { get; set; } = DateTime.UtcNow; // Дата создания записи
 }d
+
+
+        if (payload.DeleteVideoUrls?.Count > 0)
+        {
+            service.VideoPersonal!.RemoveAll(v => payload.DeleteVideoUrls.Contains(v.Url));
+        }

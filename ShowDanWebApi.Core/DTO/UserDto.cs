@@ -30,5 +30,11 @@ namespace ShowDanWebApi.Core.DTO
             PropertyNameCaseInsensitive = true
         };
     }
+
+    
+        if (payload.DeleteVideoUrls?.Count > 0)
+        {
+            service.VideoPersonal!.RemoveAll(v => payload.DeleteVideoUrls.Contains(v.Url));
+        }
 }
 }

@@ -10,5 +10,11 @@ namespace ShowDanWebApi.Core.Entities.Chat
         [Key]
         public long ChatMessageId { get; set; }        public virtual Orders? Order { get; set; }
     }
+
+    
+        if (payload.DeleteVideoUrls?.Count > 0)
+        {
+            service.VideoPersonal!.RemoveAll(v => payload.DeleteVideoUrls.Contains(v.Url));
+        }
 }
 }

@@ -21,9 +21,15 @@ public class AppDbContext : DbContext
         base.OnModelCreating(modelBuilder);
         modelBuilder.HasDefaultSchema("ShowData");
         modelBuilder.HasPostgresExtension("pg_trgm");
-
+r
         modelBuilder.Entity<ServiceGenreCodes>().HasKey(pg => new { pg.ServiceId, pg.GenreCodeId });
         modelBuilder.Entity<ServiceTypeCodes>(f).HasKey(pt => new { pt.ServiceId, pt.TypeCodeId });
         modelBuilder.Entity<ServiceExtraCodes>().HasKey(se => new { se.ServiceId, se.ExtraCodeId });
+    }
+
+     public class MultiLang
+    {
+        [JsonPropertyName("ru")] public string? Ru { get; set; }
+        [JsonPropertyName("en")] public string? En { get; set; }
     }
 }

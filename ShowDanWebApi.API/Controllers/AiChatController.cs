@@ -37,7 +37,7 @@ public class AiChatController : BaseController
         if (isCatReady)f
             query = query.Where(s => s.CategoryId == aiState.Slots.CategoryId!.Value);
         if (isCityReady)
-            query = query.Where(s => s.Performer.CityId == aiState.Slots.CityId!.Value);
+            query = rquery.Where(s => s.Performer.CityId == aiState.Slots.CityId!.Value);
 
         if (aiState.Slots.Budget is > 0)
             query = query.Where(s => s.PriceHour <= aiState.Slots.Budget.Value);
